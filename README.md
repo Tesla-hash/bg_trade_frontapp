@@ -1,7 +1,6 @@
 # Trade Bithumb Start
 
-Telegram Shop CMS
-
+Bithumb Global Trade System
 ## Install the dependencies
 ```bash
 npm install
