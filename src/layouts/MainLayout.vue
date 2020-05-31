@@ -12,7 +12,7 @@
         />
 
         <q-toolbar-title>
-          Telegram CMS
+          BG Trade Start
         </q-toolbar-title>
 
         <div>Made by Tesla</div>
@@ -25,57 +25,66 @@
             :width="200"
             :breakpoint="600"
           >
-          <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid #ddd">
+          <q-scroll-area style="height: calc(100% - 150px); margin-top: 150px; border-right: 1px solid rgba(221, 221, 221, 0);">
               <q-list padding>
-                <q-item clickable v-ripple>
+                <q-item clickable v-ripple tag="a" rel="noopener" href="#/orders">
                   <q-item-section avatar>
-                    <q-icon name="inbox" />
-                  </q-item-section>
+                    <q-icon name="fas fa-balance-scale" />
+                  </q-item-section >
 
                   <q-item-section>
-                    Inbox
+                    Открытые
                   </q-item-section>
                 </q-item>
 
-                <q-item active clickable v-ripple>
+                <q-item clickable v-ripple tag="a" rel="noopener" href="#/history">
                   <q-item-section avatar>
-                    <q-icon name="star" />
+                    <q-icon name="fas fa-cash-register" />
                   </q-item-section>
 
                   <q-item-section>
-                    Star
+                    Закрытые
                   </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item clickable v-ripple tag="a" rel="noopener" href="#/settings">
                   <q-item-section avatar>
-                    <q-icon name="send" />
+                    <q-icon name="fas fa-cogs" />
                   </q-item-section>
 
                   <q-item-section>
-                    Send
+                    Настройки
                   </q-item-section>
                 </q-item>
 
-                <q-item clickable v-ripple>
+                <q-item clickable v-ripple tag="a" rel="noopener" href="#/apps">
                   <q-item-section avatar>
-                    <q-icon name="drafts" />
+                    <q-icon name="fas fa-mobile-alt" />
                   </q-item-section>
 
                   <q-item-section>
-                    Drafts
+                    Приложения
+                  </q-item-section>
+                </q-item>
+                <q-item clickable v-ripple>
+                  <q-item-section avatar>
+                    <q-icon name="fas fa-chalkboard-teacher" />
+                  </q-item-section>
+
+                  <q-item-section>
+                    Уроки
                   </q-item-section>
                 </q-item>
               </q-list>
             </q-scroll-area>
 
-            <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 150px">
+            <q-img class="absolute-top" style="height: 150px">
               <div class="absolute-bottom bg-transparent">
                 <q-avatar size="56px" class="q-mb-sm">
-                  <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                  <img src="../statics/icons/bithumb.png">
                 </q-avatar>
-                <div class="text-weight-bold">Main Admin</div>
-                <div>@admin</div>
+                <div class="text-weight-bold">Tesla Sixx</div>
+                <div>@electro_207</div>
               </div>
             </q-img>
     </q-drawer>
@@ -87,7 +96,6 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink';
-import DataService from "../services/DataService";
 
 export default {
   components: {

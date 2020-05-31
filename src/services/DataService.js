@@ -1,6 +1,9 @@
 import http from "../config/http-common";
 
 class DataService {
+  get_user_orders(){
+    return http.get('/allorders/BIP-USDT')
+  }
   getAll() {
     return http.get("/users");
   }
